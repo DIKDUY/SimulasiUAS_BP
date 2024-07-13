@@ -1,43 +1,31 @@
+# Nama: Dicky Prawira
+# NIM: 20230801426
+
 # SAMPLE SOAL
 BERDASARKAN RANDOM SOAL DENGAN TEMA KASUS YANG TELAH DITENTUKAN YAITU LOGISTIK
 
-Menu Interaktif: Fungsi ini menampilkan menu interaktif dengan pilihan untuk membuat pesanan baru, memperbarui status pesanan, mendapatkan informasi pesanan, atau keluar dari program.
+## Pengertian Logistik
+Menurut Ariesy Tri Mauleny, dalam buku Memajukan Logistik Indonesia yang Berdaya Saing (2020), logistik adalah proses pengelolaan, pemindahan serta penyimpanan barang produksi, suku cadang ataupun barang jadi dari para penyedia ke konsumen. Logistik juga bisa diartikan sebagai proses perpindahan, pengaturan serta penyimpanan barang, mulai dari tahap pengiriman hingga ke pelanggan akhir, yang semuanya diatur dalam satu rantai pasok 
 
-Pilihan 1 - Create Order: Mengambil input dari pengguna untuk membuat pesanan baru dengan memanggil create_order dari logistics_service dan menampilkan ID pesanan yang baru dibuat.
+## Konsep Logistik
+Kata logistik sendiri berasal dari bahasa Yunani yakni Logos. Logis memiliki arti “rasio, kata, kalkulasi, alasan, pembicara dan juga orasi.” Kata logistik sendiri pun memiliki akar bahasa di bahasa Perancis yakni loger yang berarti “menyiapkan” atau “menyediakan.”Logistik memiliki peranan dan fungsi terhadap masyarakat. Fungsi utama logistik adalah memudahkan dalam pemenuhan kebutuhan masyarakat.
 
-Pilihan 2 - Update Order Status: Mengambil input dari pengguna untuk order_id dan status baru, memverifikasi validitas status, dan memperbarui status pesanan menggunakan update_status dari logistics_service.
+## Fungsi Logistik
+1. Order Processing (Pemrosesan Pesanan) 
+Pemrosesan pesanan adalah fungsi penting dalam operasi logistik. Dokumen pesanan pembelian yang dilakukan oleh pembeli kepada pemasok adalah transaksi penting antara kedua belah pihak.
 
-Pilihan 3 - Get Order Information: Mengambil input dari pengguna untuk order_id, memanggil get_order dari logistics_service, dan menampilkan informasi pesanan jika ditemukan.
+2. Inventory Control (Kontrol Inventaris)
+Manajemen persediaan adalah menyimpan persediaan yang cukup untuk memenuhi kebutuhan pelanggan dan secara bersamaan harus mendapatkan biaya penyimpanan serendah-rendahnya. Hal ini pada dasarnya adalah keseimbangan antara layanan pelanggan agar tidak kehilangan peluang pasar dan biaya untuk memenuhinya adalah sama.
 
-Pilihan 4 - Exit: Mengakhiri program dengan pesan perpisahan.
+3. Warehousing (Pergudangan)
+Warehouse atau pergudangan adalah proses penyimpanan barang jadi sampai barang tersebut dijual ke tangan pelanggan. Selama produk selesai dan menunggu distribusi, barang disimpan pada sebuah gudang agar produk dapat terpantau dan terawat sebelum sampai ke tangan pelanggan.
 
-create_order Method: Method ini digunakan untuk membuat pesanan baru dengan parameter supplier_name, material_name, dan quantity. Setiap pesanan memiliki status awal 'Pending'. Metode ini mengembalikan ID pesanan yang baru dibuat.
+4. Transportation (Transportasi)
+Ketika pesanan telah dilakukan oleh pengecer dan pelanggan, maka distribusi barang dilakukan dengan menggunakan alat transportasi. Biasanya perusahaan besar mengelola transportasinya sendiri dengan menggunakan jalur darat yaitu truk. Namun, beberapa perusahaan besar lainnya juga mendistribusikan dengan menggunakan kapal laut ataupun pesawat terbang.
 
-update_status Method: Method ini digunakan untuk memperbarui status pesanan berdasarkan order_id yang diberikan. Jika order_id ditemukan dalam orders, status pesanan diperbarui sesuai dengan nilai status yang diberikan ('Processed' atau 'Shipped').
+5. Material Handling & Storage (Penanganan & Penyimpanan Material)
+Sistem penyimpanan penting untuk memanfaatkan ruang secara maksimum dalam sebuah luas gudang tertentu. Sistem penanganan material harus mendukung sistem penyimpanan untuk pergerakan cepat seperti penyimpanan dan pengambilan  barang masuk dan keluar dari gudang. Kecepatan pergerakan inventasi di seluruh rantai pasokan bergantung pada metode penanganan material.
 
-get_order Method: Method ini digunakan untuk mengembalikan informasi pesanan berdasarkan order_id. Jika order_id ditemukan dalam orders, metode ini mengembalikan kamus yang berisi informasi pesanan. Jika tidak ditemukan, metode ini mengembalikan None.
+6. Packaging (Pengemasan)
+Pengemasan logistik adalah salah satu fungsi dalam distribusi fisik pada suatu produk. Pengemasan dapat mempengaruhi efisiensi sistem logistik dalam perlindungan kerusakan, kasus penanganan material dan penghematan ruang penyimpanan.
 
-# Metode 5W + 1H
-1. What (Apa):
-Apa tujuan dari kode ini?
-Kode ini bertujuan untuk menyediakan layanan logistik sederhana untuk mengelola pengadaan bahan baku. Ini mencakup pembuatan pesanan baru, pembaruan status pesanan, dan mendapatkan informasi pesanan.
-
-2. Mengapa (Why)
-Mengapa layanan logistik bahan baku dibuat?
-Untuk mempermudah pengelolaan pengadaan bahan baku dari berbagai pemasok dengan memantau pesanan dan statusnya secara efisien.
-
-3. Who (Siapa):
-Siapa yang akan menggunakan layanan logistik ini?
-Pengusaha atau perusahaan yang memerlukan pengelolaan pengadaan bahan baku, seperti produsen atau distributor.
-
-4. When (Kapan):
-Kapan layanan ini digunakan?
-Layanan ini digunakan saat perusahaan membutuhkan pesanan bahan baku dari pemasok, dan ketika status pesanan perlu diperbarui atau informasi pesanan diperlukan.
-
-5. Where (Dimana):
-Dimana layanan ini dapat digunakan?
-Layanan ini dapat digunakan di lingkungan perusahaan atau sistem informasi yang mengelola pengadaan bahan baku.
-
-6. How (Bagaimana):
-Bagaimana cara layanan ini bekerja?
-Layanan ini bekerja dengan cara menyediakan fungsi untuk membuat pesanan baru, memperbarui status pesanan, dan mendapatkan informasi pesanan melalui antarmuka pengguna interaktif.
